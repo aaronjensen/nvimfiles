@@ -1,5 +1,5 @@
-set runtimepath^=./repos/github.com/Shougo/dein.vim
-call dein#begin(expand('.'))
+set runtimepath^=~/.config/nvim/repos/github.com/Shougo/dein.vim
+call dein#begin(expand('~/.config/nvim'))
 
 call dein#add('Shougo/dein.vim')
 
@@ -42,6 +42,18 @@ call dein#add('tomtom/tcomment_vim')
 " opened file. Works for " 2 space, 4 space and tab indentation.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call dein#add('conormcd/matchindent.vim')
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" HTML
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+call dein#add('othree/html5.vim')
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Javascript
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+call dein#add('pangloss/vim-javascript')
+call dein#add('mxw/vim-jsx')
+let g:jsx_ext_required = 0
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Elixir
