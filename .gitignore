@@ -2,3 +2,5 @@
 /rollbacks
 /repos
 /.dein
+/.init.vim-rplugin~
+/merged
