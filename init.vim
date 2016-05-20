@@ -49,6 +49,14 @@ call dein#add('tomtom/tcomment_vim')
 call dein#add('conormcd/matchindent.vim')
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" fzf
+"
+" fuzzy finder
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+call dein#add('junegunn/fzf', {'build': './install --all'})
+call dein#add('junegunn/fzf.vim')
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Git
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call dein#add('jreybert/vimagit')
