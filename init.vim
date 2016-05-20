@@ -1,4 +1,9 @@
-set runtimepath^=~/.config/nvim/repos/github.com/Shougo/dein.vim
+if has('vim_starting')
+  set runtimepath^=~/.config/nvim/repos/github.com/Shougo/dein.vim
+endif
+
+let mapleader = "\<space>"
+
 call dein#begin(expand('~/.config/nvim'))
 
 call dein#add('Shougo/dein.vim')
@@ -42,6 +47,11 @@ call dein#add('tomtom/tcomment_vim')
 " opened file. Works for " 2 space, 4 space and tab indentation.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call dein#add('conormcd/matchindent.vim')
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Git
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+call dein#add('jreybert/vimagit')
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " HTML
