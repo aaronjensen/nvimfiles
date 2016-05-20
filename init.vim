@@ -67,7 +67,6 @@ call dein#add('slashmili/alchemist.vim', {'on_ft': ['elixir']})
 call dein#add('tomasr/molokai')
 let g:molokai_original = 1
 let g:rehash256 = 1
-colorscheme molokai
 
 call dein#end()
 
@@ -76,6 +75,8 @@ filetype plugin indent on
 if dein#check_install()
   call dein#install()
 endif
+
+colorscheme molokai
 
 set nowrap
 set tabstop=2
